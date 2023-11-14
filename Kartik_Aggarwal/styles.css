@@ -1,0 +1,72 @@
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background-color: #c3d6e2;
+}
+
+#game-container {
+  text-align: center;
+}
+
+#clue-container, #hidden-message {
+  margin-top: 20px;
+}
+
+#clue-text {
+  font-size: 18px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+#emoji-container {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.emoji{
+  animation: rotater linear 5s infinite;
+}
+
+.emoji {
+  font-size: 36px;
+  margin: 0 10px;
+  opacity: 0.5;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes rotater {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+  
+}
